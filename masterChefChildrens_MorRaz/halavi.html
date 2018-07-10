@@ -1,0 +1,199 @@
+﻿<!doctype html>
+<html lang="he">
+<head>
+    <meta charset="utf-8" />
+    <title>מאסטר שף ילדים - חלבי</title>
+    <meta name="description" content="תיאור מתכונים שונים הניתנים לבישול על ידי ילדים, בנוסף ישנה התייחסות לסכנות הקיימות במטבח" />
+    <meta name="keywords" content="מאסטר שף, בישול, ילדים" />
+    <meta name="author" content="מור רז" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+    <!--CSS-->
+    <link href="styles/reset.css" rel="stylesheet" />
+    <link href="styles/myStyle.css" rel="stylesheet" />
+
+    <!-- Jquery -->
+    <script src="jScripts/jquery-1.12.0.min.js"></script>
+
+</head>
+<body>
+    <div class="adjust" id="halaviDiv" data-page="milk">
+        <h1> <img class="logo" src="img/logo.png" onclick="window.open('home.html','_self')" /></h1>
+        <header>
+            <nav>
+                <ul>    
+                    <li class="basar"><a href="#" class="error">בשרי</a></li>
+                    <li class="halavi">
+                        <a class="selected swish" href="#" onclick="startOn()">חלבי</a>
+                        <ul class="dropcontent">
+                            <li><a href="#" onclick="show(1)">פשטידת תירס</a></li>
+                            <li><a href="#" onclick="show(0)">לזניה</a> </li>
+                            <li><a href="#" onclick="show(2)">לחם מטוגן</a> </li>
+                            <li><a href="#" onclick="show(3)">פסטה שמנת</a> </li>
+                        </ul>
+                    </li>
+                    <li class="salad"><a href="#" class="error">סלט</a></li>
+                    <li class="kinuah">
+                        <a href="desert.html" class="swish">קינוחים</a>
+                        <ul class="dropcontent">
+                            <li><a href="#" onclick="openSlide('desert',3)">כדורי שוקולד</a> </li>
+                            <li><a href="#" onclick="openSlide('desert', 0)">עוגת ביסקוויט</a> </li>
+                            <li><a href="#" onclick="openSlide('desert', 2)">עוגת שוקולד</a> </li>
+                            <li><a href="#" onclick="openSlide('desert', 1)">פנקייק</a> </li>
+                        </ul>
+                    </li>
+                    <li class="backery"><a class="error" href="#">מאפים</a></li>
+                </ul>
+            </nav>
+        </header>
+        <article class="myRecipe">
+                <!--first start page-->
+                <div id="startPage">
+                    <h2>מתכונים</h2>
+                    <table>
+                        <tr>
+                            <td><img class="swish imgStart" src="img/imgLasagna.png"  onclick="show(0)"/></td>
+                            <td><img class="swish imgStart" src="img/imgPasta.png" onclick="show(3)"/></td>
+                        </tr>
+                        <tr>
+                            <td><img class="swish imgStart" src="img/frenchToast.png" onclick="show(2)"/></td>
+                            <td><img class="swish imgStart" src="img/imgCorn2.png"  onclick="show(1)"/></td>
+                        </tr>
+                    </table>
+                </div> 
+                <!--lasagna-->
+                <div id="s0" class="tag" data-warning="1">
+                    <h3>לזניה</h3>
+                    <img class="imgrecipe" src="img/imgLasagna.jpg"/>
+                    <section class="myProducts">
+                        <h4>מצרכים:</h4>
+                        <ul>
+                            <li>קופסת עלי לזניה</li>
+                            <li>1 קוטג'</li>
+                            <li>1 גבינה לבנה</li>
+                            <li>100 גרם גבינה צהובה מגורדת </li>
+                            <li>פחית עגבניות מרוסקות</li>
+                            <li>2 כפות רסק עגבניות</li>
+                            <li>2 שיני שום קצוצות</li>
+                        </ul>
+                    </section>
+                    <section class="myPrep">
+                        <h4>אופן הכנה:</h4>
+                        <ol>
+                            <li>בקערה מערבבים את שלושת סוגי הגבינה.</li>
+                            <li>להכנת הרוטב נכניס לסיר את העגבניות המרוסקות, רסק עגבניות, שום, מעט מלח, פלפל, ואורגנו.</li>
+                            <li>
+                                עכשיו ההרכבה: בעזרת מצקת יוצקים רוטב עגבניות על תחתית התבנית - לא הרבה. ואז שופכים 1/2 מכמות הגבינה.
+                                <br />יוצקים שוב רוטב ואז מכסים שוב בעלי לזניה עד שיש שלוש שכבות לבסוף נשפוך את כל הרוטב ונפזר מעל גבינה מגורדת.
+                            </li>
+                            <li>מכניסים לתנור שחומם מראש ל 180 מעלות, עד שהגבינה מבעבעת והעלים רכים בערך כ-30 דקות.</li>
+                        </ol>
+                    </section>
+                </div>
+                <!--Corn-->
+                <div id="s1" class="tag" data-warning="1">
+                    <h3>פשטידת תירס</h3>
+                    <img class="imgrecipe" style="margin-left:-200px" src="img/imgCorn.PNG" />
+                    <section class="myProducts">
+                        <h4>מצרכים:</h4>
+                        <ul>
+                            <li>100 גרם גבינה צפתית מגורדת</li>
+                            <li>1/2 קוטג'</li>
+                            <li>2 כפות גבינה לבנה</li>
+                            <li>100 גרם גבינה צהובה מגורדת </li>
+                            <li>2 כוסות גרגירי תירס</li>
+                            <li>2 כפות קמח</li>
+                            <li>כפית אבקת אפייה</li>
+                            <li>3 ביצים</li>
+                        </ul>
+                    </section>
+                    <section class="myPrep">
+                        <h4>אופן הכנה:</h4>
+                        <ol>
+                            <li>בקערה גדולה נטרוף את הביצים ונוסיף את הגבינות  ואת כל המצרכים מלבד הקמח.</li>
+                            <li>את הקמח נוסיף בהדרגה ותוך כדי בחישה, עד שהוא נעלם לגמרה ואין גושים.</li>
+                            <li>נשמן תבנית מרובעת בינונית וניצוק לתוכה את בלילת הפשטידה.</li>
+                            <li>נאפה בתנור חם על 180 מעלות עד להזהבה, בערך 40 דקות אפייה.</li>
+                            <li>נוציא מהתנור, נצנן לטמפרטורת החדר ונגיש </li>
+                        </ol>
+                    </section>
+                </div>
+                <!--bread-->
+                <div id="s2" class="tag"  data-warning="3">
+                    <h3>לחם מטוגן</h3>
+                    <img class="imgrecipe" src="img/frenchToast.jpg"  style="margin-left:-350px;"/>
+                    <h4 style="font-size:18pt;">מצרכים:</h4>
+                    <ul>
+                        <li>3 ביצים</li>
+                        <li>1/2 כוס חלב</li>
+                        <li>8 פרוסות לחם/חלה</li>
+                        <li>חצי חצי כוס שמן </li>
+                    </ul>
+                    <section class="myPrep">
+                        <h4>אופן הכנה:</h4>
+                        <ol>
+                            <li>נטרוף את הביצים בקערה, נוסיף את החלב ונערבב.</li>
+                            <li>טובלים את הלחם בתערובת.</li>
+                            <li>מטגנים כ- 4 דקות מכל צד עד להשחמה</li>
+                            <li>מוציאים מהמחבת ומניחים על צלחת עם נייר סופג.</li>
+                        </ol>
+                    </section>
+                </div>
+                <!--pasta-->
+                <div id="s3" class="tag" data-warning="3">
+                <h3>פסטה בשמנת</h3>
+                <img class="imgrecipe" src="img/imgPasta.jpg" />
+                <h4 style="font-size:18pt;">מצרכים:</h4>
+                <ul>
+                    <li>חצי חבילת פסטה</li>
+                    <li>חבילת פטריות</li>
+                    <li>1 שמנת לבישול</li>
+                </ul>
+                <section class="myPrep">
+                    <h4>אופן הכנה:</h4>
+                    <ol>
+                        <li>מרתיחים סיר מים חמים על הגז ומבשלים את הפסטה לפי הוראות ההכנה בגב השקית. לאחר שהפסטה מסננים אותה במסננת.</li>
+                        <li>חותכים את הפטריות לקוביות וזורקים למחבת חמה עם 2 כפות שמן זית. מטגנים את הפטריות כ2-3 דקות עד להשחמה.</li>
+                        <li>מוסיפים את השמנת למחבת עם מעט מלח, פלפל ואגוז מוסקט.</li>
+                        <li>שופכים את הרוטב על פסטה ומערבבים.</li>
+                    </ol>
+                </section>
+                </div>
+            <!--arrows-->
+            <div class="arrows">
+                <a id="left">&lsaquo;</a>
+                <a id="right">&rsaquo;</a>
+            </div>
+            <!--warningSign-->
+            <img class="swish" id="warningSign" src="https://png.icons8.com/ios/50/000000/error-filled.png"/>
+        </article>
+    </div>
+    <!--warning-->
+    <div id="warning">
+        <a href="#" id="ext">X</a>
+        <h1 style="text-align:center;font-size:45px;">סכנות במטבח</h1>
+        <div id="w1" class="danger">
+            <p>כל שימוש בתנור נעשה תמיד ברשות ובהשגחת מבוגר. לפני שמפעילים את התנור בודקים שהוא ריק ותמיד נבקש עזרת מבוגר בעת הכנסת התבנית לתנור ובהוצאתה מהתנור.</p>
+            <img src="https://png.icons8.com/ios/50/000000/cooker-filled.png">
+        </div>
+        <div id="w2" class="danger">
+            <p>כל שימוש במיקרו תמיד נעשה ברשות והשגחת מבוגר. אין להכניס למיקרו דברים מתכתיים כמו קערות מתכת, כפית או עטיפת אלומיניום.</p>
+            <img src="https://png.icons8.com/ios/50/000000/microwave-filled.png">
+        </div>
+        <div id="w3" class="danger">
+            <p>כל שימוש בכיריים(גז או חשמל) תמיד נעשה ברשות והשגחת מבוגר. חשוב שקוטר הסיר יהיה גדול יותר מקוטר הלהבה, כדי שהידיים לא יתחממו ותמיד רצוי לעשות זאת באמצעות כפפות תנור. יש לשים לב לסיר על הכיריים כל הזמן ולא יוצאים מהמטבח כשהאש דולקת בשום מקרה.</p>
+            <img src="https://png.icons8.com/ios/50/000000/fire-element-filled.png">
+        </div>
+    </div>
+    <footer>
+        <a class="text" href="about.html">אודות</a>
+        <a class="text" href="siteMap.html">מפת אתר</a>
+        <a class="text" href="contact.html">צור קשר</a>
+    </footer>
+    <!--script-->
+    <script src="jScripts/init.js"></script>
+    <!--audio-->
+    <audio id="error"><source src="sound/error.mp3" type="audio/mpeg"/></audio>
+    <audio id="swish"><source src="sound/swoosh.ogg" type="audio/ogg"></audio>
+</body>
+</html>

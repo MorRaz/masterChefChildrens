@@ -1,0 +1,719 @@
+/*הטמעת פונט*/
+@font-face {
+    font-family: 'myBold';
+    src: url('../fonts/OpenSansHebrew-Bold.eot');
+    src: url('../fonts/OpenSansHebrew-Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/OpenSansHebrew-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'myBoldItalic';
+    src: url('../fonts/OpenSansHebrew-BoldItalic.eot');
+    src: url('../fonts/OpenSansHebrew-BoldItalic.eot?#iefix') format('embedded-opentype'), url('../fonts/OpenSansHebrew-BoldItalic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'myExtraBold';
+    src: url('../fonts/OpenSansHebrew-ExtraBold.eot');
+    src: url('../fonts/OpenSansHebrew-myExtraBold.eot?#iefix') format('embedded-opentype'), url('../fonts/OpenSansHebrew-myExtraBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'myItalic';
+    src: url('../fonts/OpenSansHebrew-Italic.eot');
+    src: url('../fonts/OpenSansHebrew-Italic.eot?#iefix') format('embedded-opentype'), url('../fonts/OpenSansHebrew-Italic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'myLight';
+    src: url('../fonts/OpenSansHebrew-Light.eot');
+    src: url('../fonts/OpenSansHebrew-Light.eot?#iefix') format('embedded-opentype'), url('../fonts/OpenSansHebrew-Light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'myLightItalic';
+    src: url('../fonts/OpenSansHebrew-LightItalic.eot');
+    src: url('../fonts/OpenSansHebrew-LightItalic.eot?#iefix') format('embedded-opentype'), url('../fonts/OpenSansHebrew-LightItalic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'myRegular';
+    src: url('../fonts/OpenSansHebrew-Regular.eot');
+    src: url('../fonts/OpenSansHebrew-Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/OpenSansHebrew-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: ploniBold;
+    font-weight: bold;
+    src: url("../fonts/Ploni1.1AAA-U-Bold.otf") format("opentype");
+}
+
+@font-face {
+    font-family: ploniNormal;
+    font-weight: normal;
+    src: url("../fonts/Ploni1.1AAA-Regular.otf") format("opentype");
+}
+
+
+/*עיצוב רקע כללי של כל העמודים*/
+body {
+    direction: rtl;
+    background: url('../img/aboutBG.jpg') repeat center;
+    min-width: 1500px;
+}
+
+/*הוספת סמן כף יד ללינקים*/
+a {
+    cursor: pointer;
+}
+
+/*עיצוב רקע ייחודי לכל עמוד*/
+#homeDiv {
+    background: url('../img/homePageBackground.png') no-repeat center;
+    background-size: contain;
+}
+
+#desertDiv {
+    background: url('../img/desertBackground.png') no-repeat center;
+    background-size: contain;
+}
+
+#halaviDiv {
+    background: url('../img/halaviBackground.png') no-repeat center;
+    background-size: contain;
+}
+
+/*עיצוב עמוד אודות*/
+#odotTable {
+    width: 25%;
+    height: 200px;
+}
+
+#odotbody h1, #siteMapBody h1 , #contactStyle h1 {
+    font-family: myBold;
+    font-size: 50pt;
+    color: black;
+}
+
+#myName {
+    color: #0A014F;
+}
+
+#myAcdemy {
+    background-color: #ae895d;
+}
+
+#odotLogo {
+
+    float: left;
+    width: 400px;
+    height: 250px;
+}
+
+#myDetails {
+    display: inline-block;
+    margin-top: -2000px;
+    margin-right: 750px;
+    width: 800px;
+}
+
+#progectDetails {
+    margin-right: 50px;
+    margin-top: 30px;
+}
+
+    #progectDetails p.text:last-child {
+        width: 900px;
+    }
+
+#pagesInWebsite {
+    margin-top:100px;
+    margin-right:50px;
+    width:300px;
+}
+#odotbody footer{
+    margin-top:800px;
+}
+
+/*עיצוב טקסט פתיחה*/
+#openingText h1 {
+    font-size: 40pt;
+    font-family: myBold;
+}
+
+#openingText p {
+    margin-right: 45px;
+    font-size: 20pt;
+    line-height: 40px;
+    text-align: center;
+    font-family: myBold;
+}
+
+/*עיצוב טקסט פתיחה*/
+#openingText {
+    text-align: center;
+    margin-top: 50px;
+}
+
+    #openingText > h1 {
+        font-size: 60px;
+        font-family: ploniBold;
+    }
+
+    #openingText > .text {
+        font-size: 25px;
+        margin-top: 30px;
+    }
+
+#myLogo {
+    margin-right: 350px;
+}
+
+/*עיצוב תמונה של עוגת שוקולד*/
+#cakeChocolate {
+    width: 230px;
+    height: 230px;
+    margin-right: 80px;
+}
+
+
+/*עיצוב עמודי חלבי*/
+.adjust {
+    margin: 0 auto;
+    width: 960px;
+    height: 850px;
+    background-size: contain;
+}
+
+    .adjust[data-page="milk"] {
+        background: url("../img/milk.png") no-repeat center;
+    }
+
+    .adjust[data-page="desert"] {
+        background: url("../img/desert.png") no-repeat center;
+    }
+/*עיצוב עמוד נבחר*/
+
+.selected {
+    font-weight: bolder;
+    font-size: 18pt;
+    margin-top: -5px;
+}
+
+/*עיצוב תפריט ניווט*/ x-ms-webview nav ul {
+    margin-right: 200px;
+}
+
+.halavi {
+    margin-right: 50px;
+}
+
+.salad {
+    margin-right: 40px;
+}
+
+.kinuah {
+    margin-right: 48px;
+}
+
+.backery {
+    margin-right: 35px;
+}
+
+
+nav ul li {
+    margin-top: 43px;
+}
+
+nav > ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    display: block;
+    font-family: 'myRegular';
+    font-size: 15pt;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    width: 100px;
+    height: 30px;
+    Padding-top: 10px;
+    transition: all linear 0.2s;
+}
+
+    nav ul li a:hover {
+        font-family: 'myBold';
+        font-size: 18pt;
+        margin-top: -5px;
+    }
+
+    nav ul li a:active {
+        font-family: 'myBold';
+    }
+
+/*עיצוב תפריט ניווט אנכי*/
+.dropcontent {
+    display: none;
+    position: absolute;
+    margin-right: 30px;
+}
+
+
+.dropcontent {
+    list-style-type: none;
+    text-align: center;
+    width: 48px;
+    z-index: 100;
+    margin: 0px -10px 0px 15px;
+    margin-right: -15px;
+}
+
+.halavi .dropcontent {
+    background-color: #C170FF;
+    width: 140px;
+    margin-right: -26px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.kinuah .dropcontent {
+    background-color: #F777A6;
+    width: 140px;
+    margin-right: -26px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.dropcontent li {
+    display: inline-block;
+    padding: 14px 19px;
+    position: relative;
+    margin: 0px;
+    width: 100px;
+}
+
+    .dropcontent li:last-child {
+        border-bottom-left-radius: 15%;
+        border-bottom-right-radius: 15%;
+    }
+
+.halavi .dropcontent li a {
+    display: block;
+    width: 100%;
+    background-color: #C170FF;
+    margin: 0;
+}
+
+nav ul li:hover > .dropcontent {
+    display: inline-block;
+}
+
+nav ul li ul li:hover > ul {
+    display: block;
+    width: 120px;
+    margin-right: 120px;
+    margin-top: -40px;
+    border: 3px solid #72c6f6;
+}
+
+.logo {
+    position: absolute;
+    cursor: pointer;
+    top: -5px;
+    padding-right: 30px;
+    width: 105px;
+    height: 105px;
+}
+
+#ChocolateBallsPopup {
+    float: left;
+    display: block;
+    margin-top: -60px;
+    margin-left: 0px;
+}
+
+/*עיצוב מתכון*/
+#startPage {
+    margin-top: 10px;
+    margin-right: 15%;
+}
+
+    #startPage h2 {
+        margin-right: 170px;
+        font-size: 40pt;
+    }
+
+
+    #startPage tr td img {
+        width: 210px;
+        height: 210px;
+        display: block;
+        margin: 30px;
+        transition: all linear 0.3s;
+    }
+
+        #startPage tr td img:hover {
+            width: 240px;
+            height: 240px;
+        }
+
+    #startPage h1 {
+        font-size: 50px;
+        font-family: myBold;
+    }
+
+.myRecipe {
+    margin-top: 90px;
+    margin-right: 100px;
+}
+
+    .myRecipe h3, .myRecipe h4, .myRecipe ul li, .myRecipe ol li {
+        font-family: 'myRegular';
+        font-size: 13pt;
+        line-height: 32px;
+    }
+
+    .myRecipe h3 {
+        font-size: 22pt;
+        font-family: 'myBold';
+        margin-bottom: 20px;
+    }
+
+.myProducts {
+    margin-top: 24px;
+    margin-right: 15px;
+}
+
+.myPrep {
+    margin-top: 30px;
+    margin-right: 15px;
+}
+
+    .myProducts h4, .myPrep h4 {
+        font-size: 18pt;
+        margin-right: -20px;
+    }
+
+/*תמונה*/
+.imgrecipe {
+    float: left;
+    display: block;
+    z-index: 100;
+    width: 210px;
+    height: 240px;
+    border-radius: 10%;
+    margin: 0 0 0 100px;
+}
+
+.imgStart {
+    border-radius: 20px;
+    cursor: pointer;
+    width: 50px;
+    height: auto;
+}
+
+/*חצי מעבר בין המתכונים*/
+.arrows {
+    display: inline;
+    font-size: 90px;
+    position: relative;
+}
+
+    .arrows #left {
+        float: right;
+        margin-top: 65%;
+    }
+
+    .arrows #right {
+        float: left;
+        margin-top: 65%;
+        margin-left: 100px;
+    }
+
+#left:hover, #right:hover {
+    font-size: 100px;
+    color: darkcyan;
+}
+
+.tag {
+    position: absolute;
+    display: none;
+}
+
+/*חלונית סכנות במטבח*/
+#warningSign {
+    float: left;
+    display: block;
+    margin-top: -70px;
+    margin-left: -80px;
+}
+
+#CVpopup {
+    background-color: darkorange;
+    width: 700px;
+    height: 500px;
+}
+
+#warning h1 {
+    text-align: center;
+    font-size: 45px;
+}
+
+#warning, #CVpopup {
+    display: none;
+    position: absolute;
+    z-index: 1000;
+    margin-top: -650px;
+    margin-right: 600px;
+    width: 700px;
+    height: 500px;
+    background-color: #F9F6F5;
+    border: 1.5px solid black;
+    border-radius: 10px;
+}
+
+    #warning #ext, #CVpopup #CVext {
+        text-decoration: none;
+        color: black;
+        font-size: 30px;
+        padding: 0px 5px 5px 5px;
+        border-radius: 10%;
+    }
+
+        #warning #ext:hover, #CVpopup #CVext:hover {
+            background-color: red;
+        }
+
+    #warning .danger {
+        margin: 30px 0px;
+        display: block;
+        height: 100px;
+    }
+
+    #warning img {
+        float: right;
+        display: block;
+    }
+
+    #warning p, #warning h1 {
+        float: left;
+        width: 90%;
+        font-size: 25px;
+        font-family: myRegular;
+    }
+
+.error {
+    cursor: not-allowed;
+}
+
+    .error:active {
+        color: red;
+    }
+
+audio {
+    display: none;
+}
+/*עיצוב טופס צור קשר*/
+form {
+    border: 2px solid white;
+    border-radius: 10px;
+    box-shadow: 0 0 5px #AAA;
+    width: 100%;
+    background-color: #EBE2CB;
+    margin-right: 20px;
+    margin-top: 20px;
+    padding: 10px;
+    overflow: auto;
+}
+
+    form input[type=submit] {
+        border-radius: 20px;
+        border: none;
+        background-color: #9FCD6A;
+        padding: 7px 20px;
+        margin: 5px 10px 0 30px;
+        float: left;
+        font-family: 'Alef', sans-serif;
+        font-weight: bold;
+    }
+
+        form input[type=submit]:hover, form input[type=submit]:focus {
+            background: #789A50;
+            color: white;
+            border: none;
+        }
+
+input[type="submit"] {
+    width: 90%;
+    font-size: 25px;
+    text-align: center;
+}
+
+form input[type=text], form textarea {
+    width: 500px;
+    padding: 12px 20px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    box-shadow: 0 0 3px #AAA;
+    border-radius: 5px;
+    float: left;
+}
+
+form label {
+    font-family: myRegular;
+    font-size: 12pt;
+    float: right;
+    margin-left: 20px;
+}
+
+#contactStyle {
+    width: 50%;
+    position: absolute;
+    left: 25%;
+    top: 30%;
+}
+
+#LoaderDiv {
+    display: none;
+}
+/*עיצוב פוטר*/
+footer a {
+    background-color: #EBE2CB;
+    height: 40px;
+    display: block;
+    padding: 8px 10px;
+    font-size: 30px;
+    color: #0A014F;
+    float: right;
+    text-decoration: none;
+    border-radius: 20%;
+}
+
+    footer a:hover {
+        background-color: #F4E9DD;
+    }
+
+
+:root {
+    --color1: #EEDECF;
+    --color2: #F8F7F5;
+    color: #0A014F;
+}
+
+.text {
+    float: right;
+    text-align: right;
+    font-family: ploniBold;
+    font-size: 30px;
+}
+
+.list {
+    list-style-image: url('../img/bullet.png');
+    position: relative;
+}
+
+p, li {
+    font-size: 28px;
+    font-family: ploniBold;
+}
+
+.jumbotron {
+    min-width: 100%;
+    background: #EBE2CB;
+    padding: 30px 0px;
+    text-align: center;
+    padding-bottom: 8px;
+}
+
+.item {
+    --gap: 20px;
+    width: 640px;
+    height: 480px;
+    position: relative;
+    margin: 10px 5px;
+    transition: opacity 0.4s linear;
+    cursor: help;
+}
+
+    .item .img {
+        position: absolute;
+        display: inline-block;
+        width: inherit;
+        height: inherit;
+        z-index: 0;
+        border: 1px black solid;
+        border-radius: 10px;
+    }
+
+    .item .bg {
+        background-color: #EBE2CB;
+        bottom: var(--gap);
+        z-index: 1;
+        transition: all 0.3s linear;
+    }
+
+    .item .content {
+        z-index: 2;
+        transition: all 0.3s ease-in-out;
+        transition-delay: 0.1s;
+        color: white;
+        font-size: 23px;
+        top: 0;
+        text-align: center;
+        font-family: 'Raleway', sans-serif;
+    }
+
+    .item .content, .item .bg {
+        position: absolute;
+        width: calc(100% - 2*var(--gap));
+        left: var(--gap);
+        opacity: 0;
+        height: 0;
+    }
+
+    .item:hover .bg, .item:hover .content {
+        height: calc(100% - 2*var(--gap));
+    }
+
+    .item:hover .content {
+        top: calc(50% - 2*var(--gap));
+    }
+
+    .item:hover .bg {
+        opacity: 0.9;
+    }
+
+    .item:hover .content {
+        opacity: 1;
+    }
+
+/*עיצוב עמוד מפת אתר*/
+#siteMapList {
+    margin-right: 600px;
+}
+
+    #siteMapList ul li {
+        list-style-image: url("../img/bullet.png");
+        font-size: 25pt;
+    }
+
+        #siteMapList ul li a {
+            text-decoration: none;
+            color: #0A014F;
+        }
+
+        #siteMapList ul li ul {
+            margin-right: 50px;
+        }
+
+#Sound {
+    display: block;
+    height: 32px;
+    width: 300px;
+}

@@ -1,0 +1,73 @@
+﻿<!doctype html>
+<html lang="he">
+<head>
+    <meta charset="utf-8" />
+    <title> מאסטר שף ילדים - דף הבית</title>
+    <meta name="description" content="תיאור מתכונים שונים הניתנים לבישול על ידי ילדים, בנוסף ישנה התייחסות לסכנות הקיימות במטבח" />
+    <meta name="keywords" content="מאסטר שף, בישול, ילדים" />
+    <meta name="author" content="מור רז" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+    <!--CSS-->
+    <link href="styles/reset.css" rel="stylesheet" />
+    <link href="styles/myStyle.css" rel="stylesheet" />
+
+    <!-- Scripts -->
+    <script src="jScripts/jquery-1.12.0.min.js"></script>
+
+</head>
+<body>
+        <audio id="Sound" controls="controls" autoplay="autoplay" loop="loop">
+            <source src="sound/music-homePage.mp3" type="audio/mp3" />
+            <source src="sound/music-homePage.ogg" type="audio/ogg" />
+            Your browser does not support the audio element.
+        </audio>
+    <div class="adjust" id="homeDiv">
+            <nav>
+                <ul>
+                    <li class="basar"><a href="#" class="error">בשרי</a></li>
+                    <li class="halavi">
+                        <a class="swish" href="halavi.html">חלבי</a>
+                        <ul class="dropcontent">
+                            <li><a href="#" onclick="openSlide('halavi', 1)">פשטידת תירס</a></li>
+                            <li><a href="#" onclick="openSlide('halavi', 0)">לזניה</a> </li>
+                            <li><a href="#" onclick="openSlide('halavi', 2)">לחם מטוגן</a> </li>
+                            <li><a href="#" onclick="openSlide('halavi', 3)">פסטה שמנת</a> </li>
+                        </ul>
+                    </li>
+                    <li class="salad"><a class="error" href="#">סלט</a></li>
+                    <li class="kinuah">
+                        <a href="desert.html" class="swish">קינוחים</a>
+                        <ul class="dropcontent">
+                            <li><a href="#" onclick="openSlide('desert',3)">כדורי שוקולד</a> </li>
+                            <li><a href="#" onclick="openSlide('desert', 0)">עוגת ביסקוויטים</a> </li>
+                            <li><a href="#" onclick="openSlide('desert', 2)">עוגת שוקולד</a> </li>
+                            <li><a href="#" onclick="openSlide('desert', 1)">פנקייק</a> </li>
+                        </ul>
+                    </li>
+                    <li class="backery"><a class="error" href="#">מאפים</a></li>
+                </ul>
+            </nav>
+            <div id="openingText">
+                <h1 id="LBL">מאסטר שף ג'וניור</h1>
+                <p class="text">
+                    ברוכים הבאים לאתר מאסטר שף ילדים.
+                    <br />
+                    כאן תוכלו ללמוד להכין מתכונים פשוטים וטעימים בכיף ובהנאה. <br />
+                    הורים וילדים יקרים, שימו לב שבמהלך שהותכם במטבח חובה נוכחות של אדם מבוגר.
+                    לחצו על החוצץ בו תרצו לראות מתכונים ובואו יחד נצא להרפתקת בישול ואפייה!
+                </p>
+
+            </div>
+        </div>
+        <footer>
+            <a class="text" href="about.html">אודות</a>
+            <a class="text" href="siteMap.html">מפת אתר</a>
+            <a class="text" href="contact.html">צור קשר</a>
+        </footer>
+        <audio id="BGmusic"><source src="/sound/error.mp3" type="audio/mpeg" /></audio>
+        <!--Scripts-->
+        <script src="jScripts/init.js"></script>
+        <script src="jScripts/LBLscript.js"></script>
+</body>
+</html>

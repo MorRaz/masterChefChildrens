@@ -1,0 +1,210 @@
+﻿<!doctype html>
+<html lang="he">
+<head>
+    <meta charset="utf-8" />
+    <title>מאסטר שף ילדים - קינוחים</title>
+    <meta name="description" content="תיאור מתכונים שונים הניתנים לבישול על ידי ילדים, בנוסף ישנה התייחסות לסכנות הקיימות במטבח" />
+    <meta name="keywords" content="מאסטר שף, בישול, ילדים" />
+    <meta name="author" content="מור רז" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+    <!--CSS-->
+    <link href="styles/reset.css" rel="stylesheet" />
+    <link href="styles/myStyle.css" rel="stylesheet" />
+
+    <!-- Jquery -->
+    <script src="jScripts/jquery-1.12.0.min.js"></script>
+
+</head>
+<body>
+    <div class="adjust" id="desertDiv" data-page="desert">
+        <h1> <img class="logo" src="img/logo.png" onclick="window.open('home.html','_self')" /></h1>
+        <header>
+            <nav>
+                <ul>
+                    <li class="basar"><a class="error" href="#">בשרי</a></li>
+                    <li class="halavi">
+                        <a class="swish" href="halavi.html">חלבי</a>
+                        <ul class="dropcontent" >
+                            <li><a href="#" onclick="openSlide('halavi',1)">פשטידת תירס</a></li>
+                            <li><a href="#" onclick="openSlide('halavi', 0)">לזניה</a> </li>
+                            <li><a href="#" onclick="openSlide('halavi', 2)">לחם מטוגן</a> </li>
+                            <li><a href="#" onclick="openSlide('halavi', 3)">פסטה שמנת</a> </li>
+                        </ul>
+                    </li>
+                    <li class="salad"><a class="error" href="#">סלט</a></li>
+                    <li class="kinuah">
+                        <a href="desert.html" class="swish selected">קינוחים</a>
+                            <ul  class="dropcontent">
+                                <li><a href="#" onclick="show(3)">כדורי שוקולד</a> </li>
+                                <li><a href="#" onclick="show(0)">עוגת ביסקוויט</a> </li>
+                                <li><a href="#" onclick="show(2)">עוגת שוקולד</a> </li>
+                                <li><a href="#" onclick="show(1)">פנקייק</a> </li>
+                            </ul>
+                    </li>
+                    <li class="backery"><a class="error" href="#">מאפים</a></li>
+                </ul>
+            </nav>
+        </header>
+        <article class="myRecipe">
+            <!--first start page-->
+            <div id="startPage">
+                <h2>מתכונים</h2>
+                <table>
+                    <tr>
+                        <td><img class="swish imgStart" src="img/imgBiscuit.png" onclick="show(0)"/></td>
+                        <td><img class="swish imgStart" src="img/imgPancake.png" onclick="show(1)"/></td>
+                    </tr>
+                    <tr>
+                        <td><img class="swish imgStart" src="img/imgChocoCake.png" onclick="show(2)"/></td>
+                        <td><img class="swish imgStart" src="img/imgChocoBalls.png" onclick="show(3)"/></td>
+                    </tr>
+                </table>
+            </div>
+            <!--Biscuit-->
+            <div id="s0" class="tag" data-warning="123">
+                <h3>עוגת ביסקוויטים</h3>
+                <img class="imgrecipe" src="img/imgBiscuit.jpg"/>
+                <section class="myProducts">
+                    <h4>מצרכים:</h4>
+                    <ul>
+                        <li>2 פודינג וניל</li>
+                        <li>2 שמנת מתוקה</li>
+                        <li>1 כוס חלב</li>
+                        <li>4 חבילות ביסקוויטים</li>
+                    </ul>
+                </section>
+                <section class="myPrep">
+                    <h4>אופן הכנה:</h4>
+                    <ol>
+                        <li>להכנה לוקחים את הפודינג ושמים בקערה. לאותה קערה שופכים גם את השמנת המתוקה וגם את כוס החלב <br /> ומערבבים עם מיקסר עד שנוצרת עיסה אחידה.</li>
+                        <li>שופכים קצת חלב לקערה נפרדת.</li>
+                        <li>לוקחים ביסקוויט וטובלים בתוך החלב עד שהוא נהיה לח ושמים אותו בתוך התבנית. </li>
+                        <li>כך שמים שכבה אחת של ביסקוויטים ומעליה מורחים שכבה של קצפת במחזוריות עד סוף התבנית.</li>
+                        <li>מכניסים למקרר ל 3 וחצי שעות.</li>
+                    </ol>
+                </section>
+            </div>
+            <!--pancakes-->
+            <div id="s1" class="tag" data-warning="123">
+                <h3>פנקייק</h3>
+                <img class="imgrecipe" src="img/imgPancake.jpg" />
+                <section class="myProducts">
+                    <h4>מצרכים:</h4>
+                    <ul>
+                        <li>2 ביצים</li>
+                        <li>כוס חלב</li>
+                        <li>4 כפות שמן</li>
+                        <li>1/4 כפית מלח</li>
+                        <li>שליש כוס סוכר</li>
+                        <li>כוס ורבע קמח</li>
+                        <li>2 כפיות אבקת אפיה</li>
+                    </ul>
+                </section>
+                <section class="myPrep">
+                    <h4>אופן הכנה:</h4>
+                    <ol>
+                        <li>להקציף את הביצים, להוסיף באיטיות את החלב והשמן. להוסיף סוכר, מלח ובסוף את הקמח והא. אפיה במינימום ערבוב.</li>
+                        <li>במחבת חמה, עם מעט שמן אש בינונית לצקת מהבלילה בעזרת מצקת, לטגן עד שמופיעות בועיות על פני הפנקייק,<br> להפוך בזהירות ולטגן עוד כשתי דקות. </li>
+                        <li>להניח על נייר סופג ולהגיש עם סירופ מייפל, שוקולד, ממרח שוקולד, דבש.</li>
+                    </ol>
+                </section>
+            </div>
+            <!--Chocolate cake-->
+            <div id="s2" class="tag" data-warning="123">
+                <h3>עוגת שוקולד</h3>
+                <img class="imgrecipe" src="img/imgChocoCake.jpg" id="cakeChocolate"/>
+                <section class="myProducts">
+                    <h4>מצרכים:</h4>
+                    <ul>
+                        <li>3 ביצים</li>
+                        <li>כוס סוכרת כוס שמן וכוס אבקת שוקולית</li>
+                        <li>2 כוסות קמח תופח</li>
+                        <li>2 שקיות סוכר וניל</li>
+                        <li>לציפוי השוקולד: 250 מ"ל שמנת מתוקה להקצפה ו200 גרם שוקולד מריר</li>
+                    </ul>
+                </section>
+                <section class="myPrep">
+                    <h4>:אופן הכנה</h4>
+                    <ol>
+                        <li>מקציפים את החלבונים במיקסר ומוסיפים את הסוכר בהדרגה.</li>
+                        <li>מוסיפים לקצף שנוצר את שאר החומרים ומערבבים היטב.</li>
+                        <li>מניחים בתבנית משומנת ואופים בתנור שחומם מראש כ180 מעלות.</li>
+                        <li>אופן הכנה לציפוי השוקולד- מניחים לחימום במיקרוגל קערה עם השוקולד והשמנת עד שהשוקולד נמס ומערבבים.</li>
+                        <li>לאחר שהעוגה יוצאת מהתנור מצננים אותה על השיש במשך חצי שעה ושופכים את ציפוי השוקולד על העוגה.</li>
+                    </ol>
+                </section>
+            </div>
+            <!--chocolate balls-->
+            <div id="s3" class="tag" data-warning="123">
+                <h3>כדורי שוקולד</h3>
+                <img class="imgrecipe" src="img/imgChocoBalls.jpg" style=""/>
+                <section class="myProducts">
+                    <h4>מצרכים:</h4>
+                    <ul>
+                        <li>250 גרם ביסקוויטים בתי בר</li>
+                        <li>3/2 כוס חלב</li>
+                        <li>חצי כוס סוכר וחצי כוס אגוזי לוז מסוכרים</li>
+                        <li>4 כפות קקאו וכפית תמצית וניל</li>
+                        <li>100 גרם חמאה</li>
+                        <li>לציפוי: סוכריות צבעוניות/קוקוס</li>
+                    </ul>
+                </section>
+                <section class="myPrep">
+                    <h4>:אופן הכנה</h4>
+                    <ol>
+                        <li>מרסקים בקערה את הפתי בר לפירורים גסים באמצעות מערוך או פטיש שניצלים.</li>
+                        <li>מרתיחים בסיר על הגז את החלב, סוכר, קקאו ותמצית הווניל עד שהסוכר נמס.</li>
+                        <li>מוסיפים את החמאה לסיר ומערבבים הכל היטב.</li>
+                        <li>שופכים לקערת פירורי הפתי בר, אגוזי הלוז והתערבות השוקולדית שהכנו ומערבבים עד לקבלת עיסה יציבה.</li>
+                        <li>מקררים את העיסה למשך חצי שעה במקרר.</li>
+                        <li>בעזרת ידיים מעט רטובות יוצרים כדורי שוקולד קטנים וטובלים בקערת סוכריות צבעוניות/ קוקוס.</li>
+                        <li>מניחים את כדורי השוקולד במנז'טים.</li>
+                    </ol>
+                    <img id="ChocolateBallsPopup" src="https://png.icons8.com/metro/52/666666/documentary.png"/>
+                    <div id="CVpopup">
+                        <a href="#" id="CVext">X</a>
+                        <video width="700" id="vid" controls>
+                            <source src="video/Recipe.mp4" type="video/mp4"/>
+                        </video>
+                    </div>
+                </section>
+            </div>
+            <!--arrows-->
+            <div class="arrows">
+                <a id="left">&lsaquo;</a>
+                <a id="right">&rsaquo;</a>
+            </div>
+            <img class="swish" id="warningSign" src="https://png.icons8.com/ios/50/000000/error-filled.png" />
+        </article>
+    </div>
+    <!--warning-->
+    <div id="warning">
+        <a href="#" id="ext">X</a>
+        <h1>סכנות במטבח</h1>
+        <div id="w1" class="danger">
+            <p>כל שימוש בתנור נעשה תמיד ברשות ובהשגחת מבוגר. לפני שמפעילים את התנור בודקים שהוא ריק ותמיד נבקש עזרת מבוגר בעת הכנסת התבנית לתנור ובהוצאתה מהתנור.</p>
+            <img src="https://png.icons8.com/ios/50/000000/cooker-filled.png">
+        </div>
+        <div id="w2" class="danger">
+            <p>כל שימוש במיקרו תמיד נעשה ברשות והשגחת מבוגר. אין להכניס למיקרו דברים מתכתיים כמו קערות מתכת, כפית או עטיפת אלומיניום.</p>
+            <img src="https://png.icons8.com/ios/50/000000/microwave-filled.png">
+        </div>
+        <div id="w3" class="danger">
+            <p>כל שימוש בכיריים(גז או חשמל) תמיד נעשה ברשות והשגחת מבוגר. חשוב שקוטר הסיר יהיה גדול יותר מקוטר הלהבה, כדי שהידיים לא יתחממו ותמיד רצוי לעשות זאת באמצעות כפפות תנור. יש לשים לב לסיר על הכיריים כל הזמן ולא יוצאים מהמטבח כשהאש דולקת בשום מקרה.</p>
+            <img src="https://png.icons8.com/ios/50/000000/fire-element-filled.png">
+        </div>
+    </div>
+    <footer>
+        <a class="text" href="about.html">אודות</a>
+        <a class="text" href="siteMap.html">מפת אתר</a>
+        <a class="text" href="contact.html">צור קשר</a>
+    </footer>
+    <!--scripts-->
+    <script src="jScripts/init.js"></script>
+    <script src="jScripts/chocolateScript.js"></script>
+    <!--audio-->
+    <audio id="error"><source src="sound/error.mp3" type="audio/mpeg" /></audio>
+    <audio id="swish"><source src="sound/swoosh.ogg" type="audio/ogg"></audio>
+</body>
+</html>

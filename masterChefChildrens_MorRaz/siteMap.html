@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html lang="he">
+<head>
+    <title>מאסטר שף ילדים - מפת אתר</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="תיאור מתכונים שונים הניתנים לבישול על ידי ילדים, בנוסף ישנה התייחסות לסכנות הקיימות במטבח" />
+    <meta name="keywords" content="מאסטר שף, בישול, ילדים" />
+    <meta name="author" content="מור רז" />
+
+    <!--CSS-->
+    <link href="styles/reset.css" rel="stylesheet" />
+    <link href="styles/myStyle.css" rel="stylesheet" />
+
+
+</head>
+<body id="siteMapBody">
+    <div class="jumbotron">
+        <h1 id="LBL">מפת אתר</h1>
+    </div>    
+    
+    <div id="siteMapList">
+        <ul class="list">
+            <li><a href="home.html">בית</a></li>
+            <li><a class="error">בשרי</a></li>
+            <li>
+                <a href="halavi.html">חלבי</a>
+                <ul class="list inner-list">
+                    <li><a onclick="openSlide('halavi',1)">פשטידת תירס</a></li>
+                    <li><a onclick="openSlide('halavi',0)">לזניה</a></li>
+                    <li><a onclick="openSlide('halavi',2)">לחם מטוגן</a></li>
+                    <li><a onclick="openSlide('halavi',3)">פסטה בשמנת</a></li>
+                </ul>
+            </li>
+            <li><a class="error">סלט</a></li>
+            <li>
+                <a href="desert.html">קינוחים</a>
+                <ul class="list inner-list">
+                    <li><a onclick="openSlide('desert',3)">כדורי שוקולד</a></li>
+                    <li><a onclick="openSlide('desert',0)">עוגת ביסקוויטים</a></li>
+                    <li><a onclick="openSlide('desert',2)">עוגת שוקולד</a></li>
+                    <li><a onclick="openSlide('desert',1)">פנקייק</a></li>
+                </ul>
+            </li>
+            <li><a class="error">מאפים</a></li>
+            <li><a href="about.html">אודות</a></li>
+            <li><a href="contact.html">צור קשר</a></li>
+        </ul>
+    </div>
+    <!--scripts-->
+    <script src="jScripts/init.js"></script>
+</body>
+</html>
